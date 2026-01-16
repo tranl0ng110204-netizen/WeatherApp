@@ -84,11 +84,6 @@ export default function Home() {
           <h1>Weather App</h1>
           <br></br>
           <p>Du bao thoi thiet dung WeatherAPI</p>
-          <br></br>
-          <nav className={styles.navigate}>
-            <Link className={styles.link} href='/'>Trang chu</Link>
-            <Link className={styles.link}  href='/contact'>Contact</Link>
-          </nav>
         </header>
         <div className={styles.search}>
           <Input value={location} placeholder="Enter the city name" onChange={(e) =>LocationHandle(e.target.value)}/>

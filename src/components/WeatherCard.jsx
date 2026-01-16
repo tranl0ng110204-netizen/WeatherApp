@@ -16,6 +16,15 @@ export default function WeatherCard({cardData,city}){
                         <div>
                             <img  src={icon} alt="weatherIcon" />
                         </div>
+                        <Row>
+                            <Col span={15}>
+                                <h3>Tốc độ gió : {cardData?.wind?.speed}m/s</h3>
+                                <h3>Tầm nhin:{cardData?.visibility/1000}km</h3>
+                            </Col>
+                            <Col span={9}>
+                                <h3>Độ ẩm : {cardData?.main?.humidity}%</h3>
+                            </Col>
+                        </Row>
                     </div>
 
                 ):(
